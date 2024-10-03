@@ -24,9 +24,9 @@ header{
 nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 3%;
     align-items: center;
-    padding-left: 5%;
+    padding-left:90px
+
     
 }
 
