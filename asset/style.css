@@ -1,20 +1,28 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, bisque, white);
+
+    background-image: url(./image/fond1.avif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     background-color: antiquewhite;
-    height: 115px;
+    height: 120px;
     filter: drop-shadow(0 0 0.75rem rgb(138, 122, 78));
+    
 }
 
 .logo {
-    width: 130px;
+    width: 120px;
+    margin-top:40px;
+    position: sticky;
 
 }
 
@@ -23,33 +31,28 @@ header {
     border-radius: 70%;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 90px
-}
 
 .barnav {
     display: flex;
     gap: 50px;
     list-style-type: none;
     font-weight: bold;
-    text-align: center;
     padding-left: 0%;
     font-size: 20px;
-
 }
 
 .barnav a:hover {
-    color: brown;
+    background-color: rgba(165, 42, 42, 0.537);
+    border-radius: 10%;
+    border: solid;
+    padding: 15px;
     transition: transform 0.5s ease;
 }
+
 
 .icon {
     padding: 0%;
     text-transform: uppercase;
-
 }
 
 .barnav a {
@@ -57,65 +60,23 @@ nav {
     list-style-type: none;
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-
-
 }
 
-.derouleur a:hover {
-    color: brown;
-    background-color: antiquewhite;
-    border: solid;
-    border-radius: 10%;
-    padding: 10%;
-    margin: 0px;
-    transition: 0.3s ease;
 
-}
-
-.derouleur {
-    list-style-type: none;
-    background-color: bisque;
-    border-radius: 10%;
-    display: none;
-    position: absolute;
-    padding-left: 0%;
-
-}
-
-.derouleur li {
-    padding: 15px
-}
-
-.barnav>.icon:hover .derouleur {
-    display: block;
-}
-
-main::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(./image/fond1.avif);
-    background-size: cover;
-    background-attachment: fixed;
-    opacity: 0.5;
-    z-index: -1;
-
-}
 
 .first {
     display: flex;
     filter: drop-shadow(0 0 0.75rem rgb(138, 122, 78));
     background: linear-gradient(to right, bisque, rgb(238, 233, 227));
     border: solid rgba(211, 184, 143, 0.219);
-    margin: 100px;
-    margin-top: 70px;
+    margin: 50px;
+    margin-top: 50px;
     padding: 5px;
     text-align: left;
     overflow: hidden;
     line-height: 1.2;
+
+   
 }
 
 
@@ -132,8 +93,8 @@ main::before {
 }
 
 .img1 img {
-    width: 700px;
-    height: 500px;
+    width: 600px;
+    height: 450px;
     object-fit: cover;
 
 }
@@ -146,55 +107,86 @@ main::before {
     text-align: justify;
     justify-content: left;
     padding: 50px;
+    font-size: 25px;
+   
+}
+
+.titre{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
 }
 
 h1 {
-
-    margin-top: 70px;
-    font-size: 40px;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 40px;
-    text-transform: uppercase;
+    display: inline-block;
+    border:solid black;
+    margin-top: 30px;
+    font-size: 30px;
+    text-transform: uppercase;   
+    gap: 15px;
+    padding: 25px;
+    background-color: rgba(241, 237, 232, 0.735);
+    box-shadow: 
+        5px 5px 0px #cb861e,
+        10px 10px 0px #6d5310,
+        15px 15px 0px #041216;
+    z-index: 1;
+    
+}
+h1:hover{
+    transform: rotate(10deg);
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 20px;
     margin-top: 0px;
+    padding-bottom: 30px;
+    text-transform: uppercase;   
+}
+.second h2 {
+    display: inline-block;
+    margin-top: 30px;
     padding-bottom: 20px;
     text-transform: uppercase;
+    border:solid black;
+    font-size: 25px;
+    text-transform: uppercase;   
+    gap: 15px;
+    padding: 20px;
+    background-color: rgba(241, 237, 232, 0.735);
+    box-shadow: 
+    5px 5px 0px #cb861e,
+        10px 10px 0px #6d5310,
+        15px 15px 0px #041216;
 }
 
 .intro p {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .second {
     background: linear-gradient(to right, antiquewhite, rgba(235, 231, 223, 0.529));
     text-align: center;
     filter: drop-shadow(0 0 0.75rem rgb(185, 172, 138));
-    padding-top: 40px;
-
+    padding-top: 10px;
 }
 
-
-
 .second-textp {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     padding-bottom: 40px;
-
 }
 
 h3 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .article-content {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
 
 }
 
@@ -207,22 +199,22 @@ h3 {
 .art-img a {
     color: black;
     text-decoration: none;
-    font-size: 16px;
     list-style-type: none;
 }
 
 .art-img img {
     width: 100%;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     border-bottom: solid rgb(199, 165, 122);
     filter: drop-shadow(0 0 0.75rem rgb(138, 122, 78));
+    
+
 }
 
 .art-img p {
-    font-size: 28px;
-    padding-bottom: 50px;
-    padding: 10px;
+    font-size: 25px;
+    padding: 6px;
     line-height: 1.2;
 
 }
@@ -233,22 +225,27 @@ h3 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 25%;
     border-width: 10px;
+   
 }
 
 .art-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 20%;
+    border-radius: 5%;
     overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
-
+footer{
+    background: linear-gradient(to right, bisque, white);
+    padding-bottom: 50px;
+}
 .footer {
     padding-top: 30px;
     display: flex;
     justify-content: space-around;
     border-top: solid rgba(192, 183, 183, 0.411);
     align-items: flex-start;
-    margin-bottom: 20px;
+    background: linear-gradient(to right, bisque, white);
 
 }
 
@@ -256,7 +253,7 @@ h3 {
     color: rgba(0, 0, 0, 0.788);
     text-decoration: none;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 15px;
     list-style-type: none;
 
 }
@@ -269,7 +266,7 @@ h3 {
 }
 
 .footer h2 {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .flogo {
@@ -333,11 +330,15 @@ h3 {
     .second {
         flex-direction: column;
         align-items: center;
+     
     }
 
     .article-content {
         flex-direction: column;
         align-items: center;
+        gap: 60px;
+        margin: 20%;
+        
 
     }
 
