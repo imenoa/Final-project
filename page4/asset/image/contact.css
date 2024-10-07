@@ -91,6 +91,7 @@ h1:hover {
 .contact{
     background-color:rgba(255, 255, 255, 0.308);
     margin: 100px;
+
    
 }
 .contactinfo {
@@ -103,7 +104,6 @@ h1:hover {
 
 .contactus{
     text-align: center;
-
     border-radius: 10%;
    
 }
@@ -111,6 +111,7 @@ h1:hover {
 .box{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .button{
 

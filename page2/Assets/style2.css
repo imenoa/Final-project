@@ -321,9 +321,10 @@ footer{
         align-items: center;
     }
 
-    .second {
+    .second{
         flex-direction: column;
         align-items: center;  
+        padding-left: 0%;
     }
 
     .picture {
@@ -333,6 +334,10 @@ footer{
     .colomne-caroussel {
         max-height: 100%;
 
+    }
+    .jeux{
+        flex-direction: column;
+        align-items: center;  
     }
 
     footer {
